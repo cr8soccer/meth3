@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <Title>MethStreams - Watch Free NFL, NBA, MLB, and UFC Streams</Title>
+  <meta name="description"
+    content="Watch live NFL, NBA, MLB, NHL, soccer, UFC, boxing for free in high definition on MethStreams. Access schedules, and streaming guides—no signup needed." />
+  <meta name="keywords"
+    content="MethStreams, free sports streaming, NFL streaming, NBA streaming, MLB streaming, NHL streaming, soccer streaming, UFC, MMA, boxing, live sports" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="msvalidate.01" content="78A61C1B54716E87F5A67610F8BBF01E" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      background: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      max-width: 180px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      color: #00bcd4;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    .main span {
+      display: block;
+      background: #1e1e1e;
+      padding: 10px;
+      border-left: 4px solid #00bcd4;
+      margin-bottom: 20px;
+    }
+
+    .m-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .m-list li {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #222;
+    }
+
+    .m-list li:hover {
+      background: #242424;
+      box-shadow: 0 0 10px #00bcd4;
+    }
+
+    .m-list li span:first-child::before {
+      content: "";
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #home span:first-child::before {
+      background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png");
+    }
+
+    #mlb span:first-child::before {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/375px-Major_League_Baseball_logo.svg.png");
+    }
+
+    #nba span:first-child::before {
+      background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/03/National_Basketball_Association_logo.svg/1920px-National_Basketball_Association_logo.svg.png");
+    }
+
+    #mma_boxing span:first-child::before {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDF09pK9f9hUe-x3ZuFpq8OyIyXI2XALag7Q&s");
+    }
+
+    #nhl span:first-child::before {
+      background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/1920px-05_NHL_Shield.svg.png");
+    }
+
+    .Body img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    section {
+      margin-top: 40px;
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #00bcd4;
+    }
+
+    section h2,
+    section h3,
+    section h4 {
+      color: #00bcd4;
+    }
+
+    ul,
+    ol {
+      margin-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: #2a2a2a;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #444;
+      color: #ddd;
+    }
+
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+      padding: 20px 0;
+      border-top: 1px solid #222;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlMap = {
+        home: "https://crackstreams.diy/sport/nfl",
+        cfb: "https://crackstreams.diy/sport/cfb",
+        nhl: "https://crackstreams.diy/sport/ice-hockey",
+        nba: "https://crackstreams.diy/sport/basketball",
+        mma_boxing: "https://crackstreams.diy/",
+      };
+      document.querySelectorAll(".bntl, .bntl1").forEach((item) => {
+        item.addEventListener("click", () => {
+          const id = item.id;
+          if (urlMap[id]) {
+            window.open(urlMap[id], "_blank");
+          }
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>MethStreams - Watch Free NFL, NBA, MLB, and UFC Streams</h1>
+      <p>
+        <strong>MethStreams</strong> offers high-quality, ad-free streaming for
+        major sports events like the NFL, NBA, MLB, and UFC. No signup
+        required—just click and stream.
+      </p>
+    </div>
+    <div class="main">
+      <span>💡 Pro Tip: Press <strong>Ctrl + D</strong> to bookmark this page for
+        instant live sports access!</span>
+      <ul class="m-list">
+        <li class="bntl" id="home">
+          <span>Watch Live NFL</span><span>▶</span>
+        </li>
+        <li class="bntl" id="mlb">
+          <span>Watch Live MLB</span><span>▶</span>
+        </li>
+        <li class="bntl" id="nba">
+          <span>Watch NBA & NCAA</span><span>▶</span>
+        </li>
+        <li class="bntl" id="mma_boxing">
+          <span>Watch UFC, MMA & Boxing</span><span>▶</span>
+        </li>
+        <li class="bntl" id="nhl"><span>Watch NHL</span><span>▶</span></li>
+      </ul>
+      <div class="Body">
+        <section>
+          <h2>Quick Start Guide: How to Watch Live Sports on MethStreams</h2>
+          <p>
+            If you’re a sports fan looking for a quick and simple way to watch your favorite games live,
+            MethStreams provides an incredibly straightforward process. Whether you’re using a smartphone,
+            tablet, laptop, desktop computer, or even a smart TV, the platform is designed to work seamlessly
+            across all modern devices. The moment you land on the official MethStreams website, you’re just
+            a few clicks away from watching your sport of choice in high-definition quality—without any hidden
+            fees, lengthy sign-ups, or complicated settings.
+          </p>
+          <p>
+            Here’s a step-by-step breakdown of how you can start streaming instantly:
+          </p>
+          <ol>
+            <li>
+              <strong>Access the Website:</strong> Open your preferred browser and head to the official MethStreams
+              site. The platform is mobile-friendly and responsive, ensuring smooth navigation whether you’re on
+              a small smartphone screen or a large 4K smart TV.
+            </li>
+            <li>
+              <strong>Pick a Sport:</strong> MethStreams offers a wide variety of sports categories to choose from.
+              Fans can instantly browse live matches in the NFL, NBA, NCAA Basketball, MLB, NHL, European Soccer,
+              UFC/MMA, and Boxing. Each category is neatly organized so you can quickly find the event you’re
+              interested in.
+            </li>
+            <li>
+              <strong>Select the Match:</strong> From the live schedule, simply click on the game or fight you want
+              to watch. The schedule includes both ongoing events and upcoming fixtures so you never miss an
+              important match.
+            </li>
+            <li>
+              <strong>Choose Video Quality:</strong> MethStreams allows viewers to pick their preferred streaming
+              resolution:
+              <ul>
+                <li>720p HD (2–3 Mbps) – Smooth viewing for standard home internet</li>
+                <li>1080p Full HD (5–10 Mbps) – Crystal-clear details for an immersive experience</li>
+                <li>4K Ultra HD (25+ Mbps) – Maximum clarity for large displays and premium viewing</li>
+                <li>Auto Mode – Adaptive streaming that adjusts to your internet speed in real time</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Start Watching:</strong> Once you select your settings, the stream begins instantly. No
+              account creation, email verification, or login is required—just click and enjoy.
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>How to Watch Live Sports on MethStreams: Step-by-Step</h2>
+          <ol>
+            <li>Visit the official MethStreams website on any device.</li>
+            <li>Select your preferred sport from categories like NFL, NBA, Soccer, UFC, and more.</li>
+            <li>Choose a live match or upcoming event from the schedule.</li>
+            <li>Pick your video quality—720p, 1080p, or 4K depending on your internet speed.</li>
+            <li>Enjoy streaming instantly with no registration required.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Sports You Can Watch on MethStreams</h2>
+          <p>
+            MethStreams caters to nearly every type of sports fan by providing live coverage for a wide
+            selection of popular leagues and tournaments. Here’s what you can watch:
+          </p>
+          <ul>
+            <li>🏈 <strong>NFL (American Football)</strong> – Regular season, playoffs, and Super Bowl</li>
+            <li>🏀 <strong>NBA & NCAA Basketball</strong> – From college hoops to professional matchups</li>
+            <li>⚾ <strong>MLB (Baseball)</strong> – Regular season, All-Star Game, and World Series</li>
+            <li>🏒 <strong>NHL (Hockey)</strong> – Stanley Cup playoffs, regular season, and more</li>
+            <li>⚽ <strong>Soccer</strong> – Premier League, La Liga, UEFA Champions League, Serie A, and other
+              international competitions</li>
+            <li>🥊 <strong>UFC, MMA, and Boxing</strong> – Fight Nights, title bouts, and pay-per-view events</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>MethStreams Frequently Asked Questions (FAQs)</h2>
+          <h3>Is MethStreams free?</h3>
+          <p>
+            Yes, MethStreams is completely free to use. You can watch live sports without paying any
+            subscription fees or signing up for an account.
+          </p>
+
+          <h3>Is MethStreams legal?</h3>
+          <p>
+            The legality of MethStreams depends on the laws of your country. Some regions may restrict
+            access to unlicensed streams. Always check your local regulations before using the platform.
+          </p>
+
+          <h3>Do I need a VPN?</h3>
+          <p>
+            Some sports broadcasts are region-locked due to licensing agreements. Using a VPN can help you
+            bypass these restrictions and watch securely from anywhere.
+          </p>
+        </section>
+
+        <section>
+          <h2>Final Thoughts</h2>
+          <p>
+            MethStreams has become a favorite destination for sports lovers worldwide thanks to its
+            reliable, high-definition streaming experience and easy-to-use interface. Whether you’re
+            watching the NBA Finals, the Super Bowl, a UEFA Champions League match, or a blockbuster
+            UFC fight, the platform delivers smooth, buffer-free coverage without hidden costs.
+          </p>
+          <p>
+            For cord-cutters, international fans, or anyone tired of expensive cable packages,
+            MethStreams is the ideal solution to enjoy live sports without hassle.
+          </p>
+          <p><strong>Watch. Bookmark. Enjoy. MethStreams is live sports made simple.</strong></p>
+        </section>
+
+        <section>
+          <h2>Upcoming Live Sports Schedule (May–June 2025)</h2>
+
+          <h3>Soccer Fixtures</h3>
+          <ul>
+            <li>May 17: Real Madrid vs Atlético Madrid – La Liga</li>
+            <li>June 1: Inter Milan vs Paris Saint-Germain – Champions League Final</li>
+          </ul>
+
+          <h3>NBA Playoffs</h3>
+          <ul>
+            <li>May 20: Eastern & Western Conference Finals begin</li>
+            <li>June 6: NBA Finals Game 1</li>
+          </ul>
+
+          <h3>NHL Playoffs</h3>
+          <ul>
+            <li>June 3: Stanley Cup Final Game 1 – Teams TBD</li>
+          </ul>
+
+          <h3>MLB</h3>
+          <ul>
+            <li>May 16: Boston Red Sox vs Houston Astros</li>
+            <li>June 5: Chicago Cubs vs Milwaukee Brewers</li>
+          </ul>
+
+          <h3>Combat Sports</h3>
+          <ul>
+            <li>May 25: Canelo Álvarez vs David Benavidez – Super Middleweight Title</li>
+            <li>June 15: UFC Fight Night – Sean O’Malley vs Merab Dvalishvili</li>
+          </ul>
+
+          <p><strong>Schedules are updated weekly. Check back for the latest matchups and times.</strong></p>
+        </section>
+
+      </div>
+    </div>
+    <footer>&copy; 2025 MethStreams. All rights reserved.</footer>
+  </div>
+</body>
+
+</html>
