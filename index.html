@@ -172,18 +172,17 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const urlMap = {
-        home: "https://crackstreams.diy/sport/nfl",
-        cfb: "https://crackstreams.diy/sport/cfb",
-        nhl: "https://crackstreams.diy/sport/ice-hockey",
-        nba: "https://crackstreams.diy/sport/basketball",
-        mma_boxing: "https://crackstreams.diy/",
+        home: "https://viprow.cyou//?league=NFL",
+        mlb: "https://viprow.cyou//?league=MLB",
+        nhl: "https://viprow.cyou//?league=NHL",
+        nba: "https://viprow.cyou//?league=NBA",
+        mma_boxing: "https://viprow.cyou/",
+        cfb: "https://viprow.cyou/"
       };
-      document.querySelectorAll(".bntl, .bntl1").forEach((item) => {
+      document.querySelectorAll(".bntl").forEach((item) => {
         item.addEventListener("click", () => {
           const id = item.id;
-          if (urlMap[id]) {
-            window.open(urlMap[id], "_blank");
-          }
+          if (urlMap[id]) window.open(urlMap[id], "_blank");
         });
       });
     });
